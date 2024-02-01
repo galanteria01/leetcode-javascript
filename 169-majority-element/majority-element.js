@@ -13,7 +13,6 @@ var majorityElement = function (nums) {
     let maxValue = -1;
     let maxKey = -1;
     for (const [key, value] of mp.entries()) {
-        console.log(key, value)
         if (value > maxValue) { maxValue = value; maxKey = key; }
     }
     return maxKey
